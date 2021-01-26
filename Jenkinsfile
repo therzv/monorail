@@ -7,7 +7,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    echo "svc1"
+                    echo "pahit"
                 '''
             }
         }
@@ -17,7 +17,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    echo "svc2"
+                    echo "manis"
                 '''
             }
         }
