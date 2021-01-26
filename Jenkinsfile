@@ -3,21 +3,21 @@ pipeline {
     stages {
         stage('Build svc1') {
             when {
-                changeset "**/svc1/*.*"
+                changeset "svc1/**"
             }
             steps {
                 sh '''
-                    echo "pahit"
+                    echo "svc1"
                 '''
             }
         }
         stage('build svc2') {
             when {
-                changeset "**/svc2/*.*"
+                changeset "svc2/**"
             }
             steps {
                 sh '''
-                    echo "manis"
+                    echo "svc2"
                 '''
             }
         }
