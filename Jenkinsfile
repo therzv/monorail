@@ -11,6 +11,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Build svc2') {
             when {
                 changeset "svc2/**"
@@ -20,6 +21,7 @@ pipeline {
                     echo "svc2"
                 '''
             }
+        }
 
         stage('Build svc3') {
             when {
@@ -31,6 +33,6 @@ pipeline {
                 '''
             }
         }
+
     }
-  }
 }
